@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="logo" src="/static/img/fondo.png" alt="">
+    <!-- Botón flotante WhatsApp -->
+    <a  href="https://wa.me/15551859332?text=Hola%20quiero%20informaci%C3%B3n%20de%20la%20C%C3%A1mara%20de%20Comercio%20de%20Pamplona"
+    class="whatsapp-btn" aria-label="Chatear por WhatsApp" target="_blank" rel="noopener">
+    <img src="/static/img/logo.png" alt="WhatsApp" />
+    </a>
+
+    <style>
+         .logo{
+             width: 103%;
+             height: auto;
+          }
+      /*imagen de fondo*/
+      body{
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+   
+        /* Estilo del botón */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 70px;
+      right: 70px;
+      background-color: #8d0a0a;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      padding: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1000;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+    }
+
+    .whatsapp-btn img {
+      width: 96px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+   </style>
+
+</body>
+</html>
